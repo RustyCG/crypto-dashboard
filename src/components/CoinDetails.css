@@ -1,0 +1,26 @@
+
+.coin-cont {
+    background-color: #cacaca;
+    padding: 10px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.det-box {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    justify-content: center;
+}
+.coin-image {
+    background: #fff;
+}
+.coin-name, .coin-ticker, .coin-current, .coin-chatter, .coin-chart {
+    background-color: #fff;
+    color: black;
+}
+.content-css {
+    /* width: 900; */
+    background-color: #fff!important;
+    color: black!important;
+}

@@ -1,23 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
+import { Switch, Route, Link } from 'react-router-dom'
+import Navbar from './components/Navbar'
+// import Sidebar from './components/Sidebar'
+import SidebarV2 from './components/SidebarV2'
+import NavbarV2 from './components/NavbarV2'
+import Home from './components/Home'
+import List from './components/List'
+// import ListSearch from './components/ListSearch'
+import CoinDetails from './components/CoinDetails'
+// import Portfolio from './components/Portfolio'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      {/* <Navbar className="navbar" /> */}
+      <NavbarV2 />
+      <SidebarV2 />
+      <main>
+        {/* <Sidebar className="sidebar"/> */}
+        <Switch>
+          <Route path="/coins/:coinId">
+            <CoinDetails />
+          </Route>
+          <Route path="/coins">
+            {/* <ListSearch /> */}
+            <List />
+          </Route>
+          {/*<Route path="/portfolio">
+            <Portfolio />
+          </Route> */}
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </main>
     </div>
   );
 }

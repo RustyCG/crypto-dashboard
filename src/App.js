@@ -1,7 +1,7 @@
 import './App.css';
 import { Switch, Route, Link } from 'react-router-dom'
 import Navbar from './components/Navbar'
-// import Sidebar from './components/Sidebar'
+import Sidebar from './components/Sidebar'
 import SidebarV2 from './components/SidebarV2'
 import NavbarV2 from './components/NavbarV2'
 import Home from './components/Home'
@@ -15,8 +15,8 @@ function App() {
   return (
     <div className="app">
       {/* <Navbar className="navbar" /> */}
-      <NavbarV2 />
-      <SidebarV2 />
+      <Navbar />
+      <Sidebar />
       <main>
         {/* <Sidebar className="sidebar"/> */}
         <Switch>

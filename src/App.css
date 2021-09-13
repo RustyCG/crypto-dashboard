@@ -1,44 +1,45 @@
 /* @import url("https://fonts.googleapis.com/css?family=Nunito:400,600"); */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  /* background-color: grey; */
-  /* color: #fff; */
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background-color: #212529;
+	/* background-color: grey; */
+	/* color: #fff; */
 }
 
 .app {
-  margin: 0;
-  font-size: 1rem;
-  font-weight: 400;
-  list-style: 1.5;
-  display: block;
-  /* height: -webkit-fill-available; */
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 400;
+	list-style: 1.5;
+	display: block;
+	/* height: -webkit-fill-available; */
 }
 
 .sidebar {
-  min-width: 240px;
-  max-width: 240px;
-  /* transition: margin-left 0.35s ease-in-out, left 0.35s ease-in-out; */
-  /* background: #1a1a1c; */
-  border-right: 1px solid #E4EBF6;
-  background-color: #212529;
+	min-width: 240px;
+	max-width: 240px;
+	/* transition: margin-left 0.35s ease-in-out, left 0.35s ease-in-out; */
+	/* background: #1a1a1c; */
+	border-right: 1px solid #e4ebf6;
+	background-color: #212529;
 }
 .navbar {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.875rem 1.25rem;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.875rem 1.25rem;
 }
 main {
-  width: 100%;
-  padding-left: .75rem;
-  margin-right: auto;
-  margin-left: 170px;
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+	width: 100%;
+	padding-left: 0.75rem;
+	margin-right: auto;
+	margin-left: 170px;
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
